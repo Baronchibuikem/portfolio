@@ -25,7 +25,7 @@
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Baron Chibuikem</span>
                 <span class="d-none d-lg-block">
-                    <img class="" src="assets/img/profile.jpg" alt="" />
+                    <!-- <img class="" src="assets/img/profile.jpg" alt="" /> -->
                     <img class="img-fluid img-profile mx-auto mb-2" src="{% static 'assets/img/me.jpg' %}" alt="">
                 </span>
             </a>
@@ -54,8 +54,9 @@
                         <a href="mailto:baronchibuikem@gmail.com">baronchibuike@gmail.com</a>
                     </div>
                     <p class="lead mb-5">
-                    A software developer who is very passionate about using technology to solve everyday challenges. 
-                    When i'm not coding then I'm probably on my PC palying football manager. My love for that game though!</p>
+                        Hey, nice to meet you I'm Baron. I'm a software developer with flare for backend development<br>
+                        I am passionate about technology, always willing to learn new skills and in love with what I do.
+                    </p>
                     <div class="social-icons">
                         <a class="social-icon" href="https://linkedin.com/in/anozie-u-chibuikem"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" href="https://github.com/Baronchibuikem"><i class="fab fa-github"></i></a>
@@ -70,16 +71,40 @@
             <!-- Skills-->
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
+                    <h2 class="mb-1">Skills</h2>
                     <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class=""><i class="fa fa-file mr-2"></i><h4>Html,CSS, Boostrap</h4></li>
-                        <li class=""><i class="fab fa-js-square mr-2"></i><h4>Javascript(React, Redux, Vue, Vuex, Node, Express)</h4></li>
-                        <li class=""><i class="fab fa-python mr-2"></i><h4>Python(Django, Django-Rest)</h4></li>
-                        <li class=""><i class="fa fa-database mr-2"></i><h4>Postgres, Sqlite, MongoDB</h4></li>
-                        <li class=""><i class="fab fa-github mr-2"></i><h4>Git, Github, Gitlab</h4></li>
-                    </ul>
-                   
+                    <div class="row">
+                        <div class="col-md-3 col-sm-12">
+                            <h3>Python</h3>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-angle-right"></i> Django</li>
+                                <li><i class="fas fa-angle-right"></i> Django_Rest_Framework</li>
+                                <li><i class="fas fa-angle-right"></i> Django-Graphene</li>
+                                <!-- <li><i class="fas fa-angle-right"></i> FastApi</li> -->
+                                <li><i class="fas fa-angle-right"></i> Celery</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <h3>Javascript</h3>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-angle-right"></i> React</li>
+                                <li><i class="fas fa-angle-right"></i> Vue</li>
+                                <li><i class="fas fa-angle-right"></i> Redux</li>
+                                <li><i class="fas fa-angle-right"></i> Vuex</li>
+                                <li><i class="fas fa-angle-right"></i> Node</li>
+                                <li><i class="fas fa-angle-right"></i> Express</li>
+                                <li><i class="fas fa-angle-right"></i> Graphql and Apollo-client</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <h3>Database</h3>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-angle-right"></i> Postgres</li>
+                                <li><i class="fas fa-angle-right"> </i> MongoDB</li>
+                                <li><i class="fas fa-angle-right"> </i> Sqlite</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </section>
             <hr class="m-0" />
@@ -88,151 +113,54 @@
             <section class="resume-section" id="awards">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Projects</h2>
+                    <div class="subheading mb-3">Projects worked on</div>
                     <div class="row">
+
+                        <div class="col-md-4 col-sm-12 ">
+                            <div class="card text-left shadow">
+                              <img class="card-img-top" src="{% static 'assets/img/dhistance.png' %}" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title">Dhistance</h4>
+                                    <p class="card-text">
+                                        DHIStance is the fastest route to your Data Management Server. 
+                                        It is the first ever fully automated DHIS2 as a software platform that allows you to setup and host your own DHIS2 within minutes!!! 
+                                    </p>
+                                    <p><a href="https://dhistance.com/">Visit site</a>                                
+                                </div>
+                            </div>                            
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 ">
+                            <div class="card text-left shadow">
+                                <img class="card-img-top" src="{% static 'assets/img/openHISA.PNG' %}" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title">OpenHISA</h4>
+                                    <p class="card-text">
+                                        OpenHISA is a platform built to improve citizen’s access to quality healthcare that is reliable. 
+                                        It provides you with access to a variety of health plans, crafted to meet your health financing needs.
+                                    </p>
+                                    <p><a href="http://104.225.217.155:8350/">Visit site</a>     
+                                </div>
+                            </div>
+                            
+                        </div>
+
                         <div class="col-md-4 col-sm-12 ">
                             <div class="card text-left shadow">
                               <img class="card-img-top" src="{% static 'assets/img/poll.PNG' %}" alt="">
                               <div class="card-body">
                                 <h4 class="card-title">Poll Survey Web Application</h4>
-                                <p class="card-text">A web application built to help users create and vote on polls and see the result
-                                    real time
+                                <p class="card-text">A web application built to help users create and vote on polls, see result and be properly informed based on the vote
+                                    results
                                 </p>
-                                <p><a href="https://polldecider.herokuapp.com/">Demo of the frontend</a><br> <a href="http://pollsurvey.herokuapp.com">Demo of the API backend</a></p>
-                                
-                                <p><b>Technologies used</b>: Django, Django-Rest, React, Redux</p>
-                                <i class="fab fa-github"></i><a class="social-icon" href="https://github.com/Baronchibuikem/PollSurveySPA"> Codebase on Github for React</a>
-                                <!-- <a class="social-icon" href="https://github.com/Baronchibuikem/pollsurveydb"><i class="fab fa-github"></i></a> Codebase on Github for Django -->
-                              </div>
+                                <p class="text-danger"> ...Still in active development</p>
+                                <p><a href="https://polldecider.herokuapp.com/">Visit site</a></div>
                             </div>
                             
                         </div>
-                        <div class="col-md-4 col-sm-12">
-                            <div class="card text-left shadow">
-                                <img class="card-img-top" src="{% static 'assets/img/apartment.PNG' %}" alt="">
-                                <div class="card-body">
-                                  <h4 class="card-title">Estate Web application</h4>
-                                  <p class="card-text">A real website for listing of available apartments and Agent in charge of those apartments
-                                  </p>
-                                  <p><a href="http://housingpartments.herokuapp.com/">Demo of the frontend</a><br> <u>In active development</u></p>
-                                  
-                                  <p><b>Technologies used</b>: Django, Django-Rest, React, Redux</p>
-                                  <i class="fab fa-github"></i><a class="social-icon" href="https://github.com/Baronchibuikem/ApartmentListing"> Codebase on Github</a>
-                                  
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <div class="card text-left shadow">
-                                <img class="card-img-top" src="{% static 'assets/img/purityclinic.PNG' %}" alt="">
-                                <div class="card-body">
-                                  <h4 class="card-title">Hospital Management Platform</h4>
-                                  <p class="card-text">A platform designed to help hospitals better manage their processes and resource
-                                  </p>
-                                  <p><a href="http://purityclinic.herokuapp.com//">Demo of the plaform</a><br><u>In active development</u></a></p>
-                                  
-                                  <p><b>Technologies used</b>: Django, Django-Rest, React, Redux</p>
-                                  <i class="fab fa-github"></i> <a class="social-icon" href="https://github.com/Baronchibuikem/HospitalManagementApp">Codebase on Github</a>
-                                  
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="row mt-5">
-                        <div class="col-md-4 col-sm-12 ">
-                            <div class="card text-left shadow">
-                              <img class="card-img-top" src="{% static 'assets/img/healthdbReact.PNG' %}" alt="">
-                              <div class="card-body">
-                                <h4 class="card-title">Health Data platform UI</h4>
-                                <p class="card-text">
-                                    UI design of a platform that aims to make health data available to the public for informational purposes
-                                </p>
-                                <p><a href="https://healthdb.herokuapp.com">Demo of the frontend with React</a><br>
-                                     <a href="https://vuedata4all.herokuapp.com/">Demo of the frontend with Vue</a></p>
-                                
-                                <p><b>Technologies</b>: Django, Django-Rest, React, Redux, Vue, Vuex</p>
-                                <i class="fab fa-github"></i><a class="social-icon" href="https://github.com/Baronchibuikem/HealthCycloFrontend">Codebase on Github for React</a>
-                                <i class="fab fa-github"></i><a class="social-icon" href="https://github.com/Baronchibuikem/vuedata4all">Codebase on Github for Vue</a>
-                            </div>
-                            </div>
-                        </div>
-                        <!-- <div class="col-md-4 col-sm-12">
-                            <div class="card text-left shadow">
-                                <img class="card-img-top" src="{% static 'assets/img/openHISA.PNG' %}" alt="">
-                                <div class="card-body">
-                                  <h4 class="card-title">Insurance Web Platform</h4>
-                                  <p class="card-text">An insurance platform designed to help insurance organization better manage their processes
-                                  </p>
-                                  <p><a href="http://104.225.217.155:8350/">Demo of the frontend</a><br> -->
-                                     <!-- <a href="#">Demo of the API backend</a> -->
-                                    <!-- </p>
-                                  
-                                  <p><b>Technologies used</b>: Django, Django-Rest, Vue, Vuex</p>
-                                  <a class="social-icon" href="#"><i class="fab fa-github"></i></a> Codebase on Github(Private)
-                                  
-                                </div>
-                              </div>
-                        </div> -->
-                        <div class="col-md-4 col-sm-12">
-                            <div class="card text-left shadow">
-                                <img class="card-img-top" src="{% static 'assets/img/onlinecourses.PNG' %}" alt="">
-                                <div class="card-body">
-                                  <h4 class="card-title">Online Course Platform</h4>
-                                  <p class="card-text">A Web platform being developed to help user's enroll into different courses
-                                  </p>
-                                  <p><a href="http://chibyk.pythonanywhere.com/">Demo of the plaform</a><br><u>In active development</u></a></p>
-                                  
-                                  <p><b>Technologies used</b>: Django, Boostrap, Css</p>
-                                  <i class="fab fa-github"></i> <a class="social-icon" href="https://github.com/Baronchibuikem/Ablib">Codebase on Github</a>
-                                  
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                        <h2 class="mt-5">Other Projects</h2>
-                        <!-- <div class="subheading mb-3">Programming Languages & Tools</div> -->
-                        <ul class="list-unstyled">
-                            <div class="row">
-                                <div class="col-md-3 col-sm-12">
-                                    <li class=""><h4>Apex Legend Tracker</h4>
-                                       
-                                            <li><a href="https://apex-lengends.herokuapp.com/">Click for Demo</a></li>
-                                            <li><a href="https://github.com/Baronchibuikem/apex_lengend_stats">Click to get the codebase</a></li>
-                                            <li>Technologies: Node, Express and Vue</li>
-                                        
-                                    </li>
-                                </div>
-                                <div class="col-md-3 col-sm-12">
-                                    <li class=""><h4>Health Stats</h4>
-                                        
-                                            <li><a href="https://apex-lengends.herokuapp.com/">Click for Demo</a></li>
-                                            <li><a href="https://github.com/Baronchibuikem/HealthData">Click to get the codebase</a></li>
-                                            <li>Technologies: Django, Bootstrap</li>
-                                        
-                                    </li>
-                                </div>
-                                <div class="col-md-3 col-sm-12">
-                                    <li class=""><h4>YouDecide</h4>
-                                        
-                                            <li><a href="https://youdecidespa.herokuapp.com/">Click for Demo</a></li>
-                                            <li><a href="https://github.com/Baronchibuikem/youdecideio">Click to get the codebase</a></li>
-                                            <li>Technologies: Vue, Vuex, Boostrap (in active development)</li>
-                                        
-                                    </li>
-                                </div>
-                                <div class="col-md-3 col-sm-12">
-                                    <li class=""><h4>YouDecide</h4>
-                                        
-                                        <!-- <li><a href="https://youdecidespa.herokuapp.com/">Click for Demo</a></li> -->
-                                        <li><a href="https://github.com/Baronchibuikem/Devsconnect">Click to get the codebase</a></li>
-                                        <li>Technologies: Express, Node, React, Redux</li>
-                                    
-                                </li>
-                                    
-                                </div>
-                            </div>                            
-                        </ul>
-
-                        <div class="subheading mb-2 text-center text-dark"> <blockquote>...Feel free to reach me for any project or available position...</blockquote></div>
+                       
+                        
+                        <div class="subheading mt-5 mt-2 text-center mx-auto text-dark"> <blockquote>...Feel free to reach me for any project or available position...</blockquote></div>
                 </div>
             </section>
         </div>
