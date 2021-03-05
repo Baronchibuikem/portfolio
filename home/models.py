@@ -20,7 +20,6 @@ class Blog(models.Model):
     title = models.CharField(max_length=100)
     slug = models.SlugField(
         max_length=250, unique_for_date='created', blank=True, null=True)
-    image = models.ImageField(upload_to='media', blank=True, null=True)
     content = RichTextUploadingField()
     read_time = models.IntegerField(blank=True, null=True)
     status = models.CharField(

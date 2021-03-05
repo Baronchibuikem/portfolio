@@ -148,7 +148,7 @@ MEDIA_ROOT = os.path.join(os.path.join(BASE_DIR, "media/"))
 
 MEDIA_URL = '/media/'
 
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 # ensures we are using bootstrap 4
