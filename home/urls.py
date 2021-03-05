@@ -1,7 +1,8 @@
 from django.urls import path
-from home.views import home
+from home.views import home, blog_detail, about
 
 urlpatterns = [
-    # this renders the create_medical_record view which is a form for users to fill
     path('', home, name='home'),
+    path("post/<str:slug>/", blog_detail, name="post-detail"),
+    path("profile/", about, name="about")
 ]

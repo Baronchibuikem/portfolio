@@ -1,0 +1,140 @@
+{% extends "index.html" %} 
+{% load static %} 
+{% block section %}{% endblock section %}
+{% block content %} 
+	    <article class="about-section py-5">
+		    <div class="container">
+			    <h5 class="mt-5">About Me</h5>
+			    
+			    <p> 
+					<ul class="list-unstyled">
+						<li>
+							I am Anozie Baron Chibuikem, a software developer based in Nigeria with flare for software development using Python.<br/> <br/>
+							Besides coding, I write both here and on <a href="https://www.baronchibuike.medium.com" target="__blank">medium</a> about Python and Javascript, 
+							Looking forward to starting a youtube channel and speaking at conferences.<br/> <br/>
+							<u><i>I'm a huge fan of various Python communities around the world</i></u> <br/> <br/>
+							You're welcomed to subscribe to my newsletter and get to know what projects I'm currently working on ❤️.
+						</li>
+					</ul>
+				</p>
+			    <h5 class="mt-5">About The Blog</h5>
+			    <p>In my bit to document my growth process and possibly encourage someone else, I had to embed a blog to this portfolio.<br/><br/> The blog serves as a way for me to
+					keep sharing my journey and knowledge with others. I will mostly be putting out content revolving around my career path, Python, Javascript and their ecosystem
+				</p>
+			    <h5 class="mt-5">My Skills</h5>
+			    <p>
+					For <b><i>Backend Development</i></b>, I am a huge fan of Python and it's ecosystem.<br/>
+					Currently work with <b>Django</b>, <b>Django-Rest</b> and <b>Django-Graphene</b> on daily basis.<br/><br/>
+
+					For <b><i>Frontend Development</i></b>, I occassionally find myself either developing with <b>React</b> or <b>Vue</b> and I'm sold with either of
+					them because they are both awesome to work with.
+					
+
+				</p>
+			    <h5 class="mt-5">Side Projects</h5>
+			    <p>
+					<div class="row">
+
+                        <div class="col-md-4 col-sm-12 ">
+                            <div class="card text-left shadow">
+                              <img class="card-img-top" src="{% static 'img/dhistance.png' %}" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title">Dhistance</h4>
+                                    <p class="card-text">
+                                        DHIStance is the fastest route to your Data Management Server. 
+                                        It is the first ever fully automated DHIS2 as a software platform that allows you to setup and host your own DHIS2 within minutes!!! 
+                                    </p>
+                                    <p><a href="https://dhistance.com/" target="__blank">Visit site</a>                                
+                                </div>
+                            </div>                            
+                        </div>
+
+                        <div class="col-md-4 col-sm-12">
+                            <div class="card text-left shadow">
+                              <img class="card-img-top" src="{% static 'img/msdat.png' %}" alt="">
+                              <div class="card-body">
+                                <h4 class="card-title mt-3">MSDAT</h4>
+                                <p class="card-text">
+									MSDAT is a platform developed to ensure decision-makers are properly informed with the
+									right data that will guide them in making decisions and policies for the health sector
+                                </p>
+                                <p class="py-2"><a href="https://msdat.fmohconnect.gov.ng" target="__blank">Visit site</a></div>
+                            </div>
+                            
+                        </div>
+
+                        
+                        <div class="col-md-4 col-sm-12 ">
+                            <div class="card text-left shadow">
+                                <img class="card-img-top" src="{% static 'img/exaltify.png' %}" alt="">
+                                <div class="card-body mt-4">
+                                    <h4 class="card-title">Exaltify</h4>
+                                    <p class="card-text">
+                                        Exaltify is a multi-tenant church application
+                                        for users to share testimonies and make
+                                        offerings, and also dashboard for the church to
+                                        manage its users and also share
+                                        sermons, devotions etc.
+                                    </p>
+                                    <p><a href="https://exaltify.com.ng/" target="__blank">Visit site</a>     
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 mt-3">
+                            <div class="card text-left shadow">
+                                <img class="card-img-top" src="{% static 'img/jotternote.png' %}" alt="">
+                                <div class="card-body mt-4">
+                                    <h4 class="card-title">Jotternote</h4>
+                                    <p class="card-text">
+                                        Developed the full application with Express and React to be a note taking application,
+                                        where user's can save their note, have quick access to it and properly sort them into
+                                        categories
+                                    </p>
+                                    <p><a href="http://jotternote.herokuapp.com" target="__blank">Visit site</a>     
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 mt-3">
+                            <div class="card text-left shadow">
+                                <img class="card-img-top" src="{% static 'img/apartment.PNG' %}" alt="">
+                                <div class="card-body mt-4">
+                                    <h4 class="card-title">EmpireHousings</h4>
+                                    <p class="card-text">
+                                        Developed to be your one stop to buying landed house properties with a taste of quality
+                                        and at same time very affordable. This application was built with Django and React
+                                    </p>
+                                    <p><a href="http://housingpartments.herokuapp.com" target="__blank">Visit site</a>     
+                                </div>
+                            </div>
+                            
+                        </div>
+						<!-- <div class="col-md-4 col-sm-12 mt-3">
+                            <div class="card text-left shadow">
+                                <img class="card-img-top" src="{% static 'img/openHISA.PNG' %}" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title">OpenHISA</h4>
+                                    <p class="card-text">
+                                        OpenHISA is a platform built to improve citizen’s access to quality healthcare that is reliable. 
+                                        It provides you with access to a variety of health plans, crafted to meet your health financing needs.
+                                       
+                                    </p>
+                                    <p><a href="http://104.225.217.155:8350/" target="__blank">Visit site</a>     
+                                </div>
+                            </div>
+                            
+                        </div> -->
+
+                        
+
+                       
+				</p>
+			    
+		    </div>
+	    </article>
+	       
+    
+{% endblock content %}

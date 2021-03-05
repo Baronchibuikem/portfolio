@@ -1,0 +1,19 @@
+{% load static %} 
+{% for post in posts %}
+<section class="blog-list px-3 mt-2">
+	<div class="container">
+		<div class="item">
+			<div class="media">
+				<!-- <img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="{% static 'assets/images/blog/blog-post-thumb-1.jpg' %}" alt="image"> -->
+				<div class="media-body">
+					<h3 class="title mb-1"><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h3>
+					<div class="meta mb-1"><span class="date">{{ post.created }}</span><span class="time">{{ post.read_time }} min read</span><span class="comment"></span></div>
+					<div class="intro">{{ post.content|truncatewords:50|linebreaks}} <a class="more-link" href="{{ post.get_absolute_url }}">Read more &rarr;</a></div>
+					
+				</div>
+			</div>
+		</div>
+		{% include "pagination.html" with page=posts %}
+	</div>
+</section>
+{% endfor %}

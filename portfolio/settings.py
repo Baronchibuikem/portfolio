@@ -20,10 +20,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get("SECRET_KEY")
+SECRET_KEY = os.environ.get(
+    "SECRET_KEY", "nr$ph)fn+c^d40()0pw!l*l@u+=f95im$-y_^3@e7zsb1o8@7x")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = int(os.environ.get("DEBUG", default=0))
+DEBUG = int(os.environ.get("DEBUG", default=1))
 
 
 ALLOWED_HOSTS = ["awesomebaron.herokuapp.com", "127.0.0.1", '*']
@@ -39,7 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home',
-    'crispy_forms'
+    'crispy_forms',
+    'ckeditor',
+    'ckeditor_uploader'
 ]
 
 MIDDLEWARE = [
@@ -132,10 +135,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = '/static/'
+# STATIC_ROOT = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 STATICFILES_DIRS = [
-    os.path.join(os.path.join(BASE_DIR, "static")),
+    os.path.join(BASE_DIR, "static"),
 ]
 
 # STATIC_ROOT = os.path.join(os.path.join(BASE_DIR, "staticfiles"))
@@ -144,8 +148,22 @@ MEDIA_ROOT = os.path.join(os.path.join(BASE_DIR, "media/"))
 
 MEDIA_URL = '/media/'
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 # ensures we are using bootstrap 4
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+CKEDITOR_UPLOAD_PATH = "uploads"
+
+CKEDITOR_IMAGE_BACKEND = "pillow"
+
+CKEDITOR_THUMBNAIL_SIZE = (300, 300)
+
+CKEDITOR_IMAGE_QUALITY = 40
+
+CKEDITOR_BROWSE_SHOW_DIRS = True
+
+CKEDITOR_ALLOW_NONIMAGE_FILES = True
+
+CKEDITOR_FORCE_JPEG_COMPRESSION = True
