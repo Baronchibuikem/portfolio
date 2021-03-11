@@ -8,7 +8,7 @@
 				<div class="media-body">
 					<h3 class="title mb-1"><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h3>
 					<div class="meta mb-1"><span class="date">{{ post.created }}</span><span class="time">{{ post.read_time }} min read</span><span class="comment"></span></div>
-					<div class="intro">{{ post.content|truncatewords:50|linebreaks}} <a class="more-link" href="{{ post.get_absolute_url }}">Read more &rarr;</a></div>
+					<div class="intro">{{ post.content|safe|truncatewords:50|linebreaks}} <a class="more-link" href="{{ post.get_absolute_url }}">Read more &rarr;</a></div>
 					
 				</div>
 			</div>
