@@ -11,6 +11,9 @@
 				    <h2 class="title mb-2">{{post.title}}</h2>
 				    <div class="meta mb-3"><span class="date">{{post.created}} </span><span class="time">{{post.read_time}} min read</span></div>
 			    </header>
+			    <div>
+				    {{post.content|safe}}
+			    </div>
 			    
 				<span><a href="{% url 'home' %}">Back to home page</a></span>
 			</div>
